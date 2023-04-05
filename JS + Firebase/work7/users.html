@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>Todo App</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://kit.fontawesome.com/08958affb8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="sign-out">
+    <button class="sign-out-button hover_button" onclick="logout()">
+      Sign-out
+    </button>
+  </div>
+  <div class="container">
+    <form id="form" class="todo-form">
+      <div>
+        <input type="text" id="todos" required placeholder='Введите задачу и нажмите клавишу "enter"' />
+      </div>
+    </form>
+    <div id="todo-container"></div>
+    <div class="buttons">
+      <button id="all" onclick="filterHandler('all')" class="button button1 hover_button">
+        Все задачи
+      </button>
+      <button id="open" onclick="filterHandler('open')" class="button button2 hover_button">
+        Незавершённые задачи
+      </button>
+      <button id="finished" onclick="filterHandler('completed')" class="button button3 hover_button">
+        Завершённые задачи
+      </button>
+    </div>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-auth-compat.js"></script>
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyAwD3-zdkFjQvFYODIphvw5dObCqIiwZWo",
+      authDomain: "test-5f07a.firebaseapp.com",
+      databaseURL: "https://test-5f07a-default-rtdb.firebaseio.com",
+      projectId: "test-5f07a",
+      storageBucket: "test-5f07a.appspot.com",
+      messagingSenderId: "354523801244",
+      appId: "1:354523801244:web:45f6e36b1ff93f504c6f59",
+      measurementId: "G-PFQH7JZMV6"
+    };
+    firebase.initializeApp(firebaseConfig);
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+  </script>
+
+  <script src="js/users.js"></script>
+</body>
+
+</html>

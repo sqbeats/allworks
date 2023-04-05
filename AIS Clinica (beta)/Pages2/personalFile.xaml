@@ -1,0 +1,119 @@
+﻿<Page x:Class="WPFModernVerticalMenu.Pages2.personalFile"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:Icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPFModernVerticalMenu.Pages2"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="personalFile">
+
+    <Page.Resources>
+        <DataTemplate x:Key="templ">
+            <TextBlock Text="{Binding address}" TextWrapping="Wrap" Foreground="Black" />
+        </DataTemplate>
+    </Page.Resources>
+
+    <Grid Background="{DynamicResource SecundaryBackgroundColor}" Loaded="Grid_Loaded" >
+
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="40"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Text="Записей: "
+                   x:Name="values"
+                           Grid.Row="0"
+                           Grid.Column="0"
+                           Foreground="DarkGray"
+                           FontSize="15"
+                           VerticalAlignment="Center"
+                           FontWeight="Medium"
+                           FontFamily="Montserrat"
+                           Margin="10 0 0 0"/>
+
+            <TextBlock Text="Найти: "
+                           Grid.Row="0"
+                           Grid.Column="2"
+                           Foreground="DarkGray"
+                           FontSize="15"
+                           VerticalAlignment="Center"
+                           FontWeight="Medium"
+                           FontFamily="Montserrat"
+                            HorizontalAlignment="Right"
+                           Margin="0 5 210 0"/>
+
+            <TextBox x:Name="txtEmail"
+                        Grid.Row="0"
+                         Grid.Column="2"
+                         FontSize="13"
+                         Background="Transparent"
+                         FontWeight="Medium"
+                         FontFamily="Montserrat"
+                         Foreground="White"
+                         CaretBrush="LightGray"
+                         BorderBrush="DarkGray"
+                         BorderThickness="0 0 0 1"
+                         Height="25"
+                         HorizontalAlignment="Right"
+                         VerticalContentAlignment="Center"
+                         Margin="0 2 5 0" Width="198">
+            </TextBox>
+
+            <Icon:PackIconMaterial Kind="Magnify" Width="15" Height="15" Grid.Row="0" Grid.Column="3"
+                               VerticalAlignment="Center" Margin="0 0 15 0" Foreground="LightGray"/>
+        </Grid>
+
+        
+        
+        <DataGrid Grid.Row="1" Margin="0 5 0 0" x:Name="personalGrid" RowStyle="{DynamicResource DataGridRowStyle1}" ColumnHeaderStyle="{DynamicResource DataGridColumnHeaderStyle1}" CellStyle="{DynamicResource DataGridCellStyle1}" Style="{DynamicResource DataGridStyle1}" AutoGeneratingColumn="usersGrid_AutoGeneratingColumn">
+
+            
+            
+            
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Номер дела" IsReadOnly="True" CanUserResize="False" Width="Auto" Binding="{Binding workerInfoID}" x:Name="workerInfoID"/>
+                <DataGridTextColumn Header="Фамилия" IsReadOnly="True" CanUserResize="False" Width="Auto" Binding="{Binding surname}"/>
+
+                
+
+                <DataGridTextColumn Header="Имя" IsReadOnly="True" Width="*" Binding="{Binding name}"/>
+                <DataGridTextColumn Header="Отчество" IsReadOnly="True" Width="*" Binding="{Binding secondname}"/>
+                <DataGridTextColumn Header="Адрес" IsReadOnly="True" Width="*" Binding="{Binding address}"/>
+                <DataGridTextColumn Header="День рождения" IsReadOnly="True" Width="*" Binding="{Binding birthday, StringFormat=\{0:dd.MM.yy\}}"/>
+                <DataGridTextColumn Header="Номер телефона" IsReadOnly="True" Width="*" Binding="{Binding phoneNumber}"/>
+                <DataGridTextColumn Header="Почта" IsReadOnly="True" Width="*" Binding="{Binding email}"/>
+
+                <DataGridTemplateColumn Header="Операции" IsReadOnly="True" Width="*">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <Button Style="{StaticResource editGridButton}">
+                                    <Icon:PackIconMaterial Kind="PencilOutline" Style="{StaticResource gridButtonIcon}"/>
+                                </Button>
+                                <Button Style="{StaticResource removeGridButton}" Margin="5 0 0 0" Click="Button_Click">
+                                    <Icon:PackIconMaterial Kind="DeleteOutline" Style="{StaticResource gridButtonIcon}" />
+                                </Button>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+            </DataGrid.Columns>
+        </DataGrid>
+
+
+
+    </Grid>
+</Page>

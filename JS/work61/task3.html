@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 2</title>
+</head>
+<body>
+    <p>...содержимое перед скриптом...</p>
+
+<script async src="long.js"></script>
+<script async src="small.js"></script>
+
+    <p>...содержимое после скриптом...</p>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => alert("DOM готов!"))
+    </script>
+</body>
+</html>

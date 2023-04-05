@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>Todo App</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <form id="login-form" class="form center">
+    <h2>Вход</h2>
+    <p>
+      <input type="email" id="email" placeholder="Электронная почта" />
+    </p>
+    <p>
+      <input type="password" id="password" placeholder="Пароль" />
+    </p>
+    <p style="text-align: center">
+      Еще не зарегистрировались?
+      <br />
+      Перейти к <a href="./index.html">регистрации</a>
+    </p>
+    <button type="submit" id="login">Войти</button>
+  </form>
+
+  <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-auth-compat.js"></script>
+
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyAwD3-zdkFjQvFYODIphvw5dObCqIiwZWo",
+      authDomain: "test-5f07a.firebaseapp.com",
+      databaseURL: "https://test-5f07a-default-rtdb.firebaseio.com",
+      projectId: "test-5f07a",
+      storageBucket: "test-5f07a.appspot.com",
+      messagingSenderId: "354523801244",
+      appId: "1:354523801244:web:45f6e36b1ff93f504c6f59",
+      measurementId: "G-PFQH7JZMV6"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+  </script>
+
+  <script src="js/login.js"></script>
+</body>
+
+</html>

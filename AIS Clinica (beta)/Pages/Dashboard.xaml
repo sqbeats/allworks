@@ -1,0 +1,83 @@
+﻿<Page x:Class="WPFModernVerticalMenu.Pages.Dashboard"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPFModernVerticalMenu.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Dashboard">
+
+    <Border CornerRadius="5" Background="{DynamicResource SecundaryBackgroundColor}">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0 10 0 0">
+                <Button x:Name="btnFirst"
+                        Content="Пользователи"
+                        Style="{StaticResource tabButtons}"
+                            Grid.Column="0"
+                            Margin="0,0,0,0"
+                            Click="btnFirst_Click">
+                </Button>
+
+                <Button x:Name="btnSecond"   
+                            Content="Личные дела"
+                            Grid.Column="1"
+                            Click="btnSecond_Click"
+                        Style="{StaticResource tabButtons}">
+                </Button>
+
+                <Button x:Name="btnThird"   
+                            Content="Регистрация"
+                            Grid.Column="2"
+                            Click="btnThird_Click"
+                            Style="{StaticResource tabButtons}">
+                </Button>
+
+            </StackPanel>
+
+            <Frame Grid.Row="1"
+                       Name="fContainer"
+                       Margin="2"
+                       NavigationUIVisibility="Hidden">
+
+            </Frame>
+
+
+        </Grid>
+
+
+    </Border>
+
+    <!--
+    
+    <Grid Loaded="Grid_Loaded">
+
+        <DataGrid x:Name="phonesGrid" AutoGenerateColumns="False" HorizontalGridLinesBrush="DarkGray" 
+ RowBackground="White" AlternatingRowBackground="{DynamicResource SecundaryBackgroundColor}" Margin="0,48,0,106" IsReadOnly="True" CanUserDeleteRows="True" Foreground="Black">
+
+            <DataGrid.Items>
+
+            </DataGrid.Items>
+
+
+
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="#" Binding="{Binding Path=id}" Width="*" />
+                <DataGridTextColumn Header="Имя пользователя" Binding="{Binding Path=login}" Width="*" />
+                <DataGridTextColumn Header="Пароль" Binding="{Binding Path=password}" Width="*" />
+                <DataGridTextColumn Header="Роль" Binding="{Binding Path=role}" Width="*" />
+                <DataGridTextColumn Header="Последний заход" Binding="{Binding Path=lastSeen}" Width="*" />
+                <DataGridTextColumn Header="Идентификатор работника" Binding="{Binding Path=workerInfoID}" Width="*" />
+            </DataGrid.Columns>
+
+        </DataGrid>
+    </Grid>
+    
+    -->
+
+</Page>

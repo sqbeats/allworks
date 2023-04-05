@@ -1,0 +1,306 @@
+﻿
+namespace secondhand
+{
+    partial class Form2
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
+            this.panelMenu = new System.Windows.Forms.Panel();
+            this.iconContacts = new FontAwesome.Sharp.IconButton();
+            this.iconReviews = new FontAwesome.Sharp.IconButton();
+            this.iconShopCart = new FontAwesome.Sharp.IconButton();
+            this.iconProfile = new FontAwesome.Sharp.IconButton();
+            this.panelLogo = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lblTitleChildForm = new System.Windows.Forms.Label();
+            this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
+            this.maxim = new System.Windows.Forms.PictureBox();
+            this.minim = new System.Windows.Forms.PictureBox();
+            this.close = new System.Windows.Forms.PictureBox();
+            this.panelDesktop = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.panelMenu.SuspendLayout();
+            this.panelLogo.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maxim)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.minim)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.close)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // panelMenu
+            // 
+            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(64)))), ((int)(((byte)(213)))));
+            this.panelMenu.Controls.Add(this.iconContacts);
+            this.panelMenu.Controls.Add(this.iconReviews);
+            this.panelMenu.Controls.Add(this.iconShopCart);
+            this.panelMenu.Controls.Add(this.iconProfile);
+            this.panelMenu.Controls.Add(this.panelLogo);
+            this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelMenu.Location = new System.Drawing.Point(0, 0);
+            this.panelMenu.Name = "panelMenu";
+            this.panelMenu.Size = new System.Drawing.Size(196, 561);
+            this.panelMenu.TabIndex = 0;
+            // 
+            // iconContacts
+            // 
+            this.iconContacts.Dock = System.Windows.Forms.DockStyle.Top;
+            this.iconContacts.FlatAppearance.BorderSize = 0;
+            this.iconContacts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconContacts.Font = new System.Drawing.Font("Sitka Small", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.iconContacts.IconChar = FontAwesome.Sharp.IconChar.AddressCard;
+            this.iconContacts.IconColor = System.Drawing.SystemColors.Control;
+            this.iconContacts.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconContacts.IconSize = 36;
+            this.iconContacts.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconContacts.Location = new System.Drawing.Point(0, 235);
+            this.iconContacts.Name = "iconContacts";
+            this.iconContacts.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.iconContacts.Size = new System.Drawing.Size(196, 60);
+            this.iconContacts.TabIndex = 6;
+            this.iconContacts.Text = "Контакты";
+            this.iconContacts.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconContacts.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconContacts.UseVisualStyleBackColor = true;
+            this.iconContacts.Click += new System.EventHandler(this.iconContacts_Click);
+            // 
+            // iconReviews
+            // 
+            this.iconReviews.Dock = System.Windows.Forms.DockStyle.Top;
+            this.iconReviews.FlatAppearance.BorderSize = 0;
+            this.iconReviews.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconReviews.Font = new System.Drawing.Font("Sitka Small", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.iconReviews.IconChar = FontAwesome.Sharp.IconChar.CommentMedical;
+            this.iconReviews.IconColor = System.Drawing.SystemColors.Control;
+            this.iconReviews.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconReviews.IconSize = 36;
+            this.iconReviews.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconReviews.Location = new System.Drawing.Point(0, 175);
+            this.iconReviews.Name = "iconReviews";
+            this.iconReviews.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.iconReviews.Size = new System.Drawing.Size(196, 60);
+            this.iconReviews.TabIndex = 4;
+            this.iconReviews.Text = " Отзывы";
+            this.iconReviews.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconReviews.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconReviews.UseVisualStyleBackColor = true;
+            this.iconReviews.Click += new System.EventHandler(this.iconReviews_Click);
+            // 
+            // iconShopCart
+            // 
+            this.iconShopCart.Dock = System.Windows.Forms.DockStyle.Top;
+            this.iconShopCart.FlatAppearance.BorderSize = 0;
+            this.iconShopCart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconShopCart.Font = new System.Drawing.Font("Sitka Small", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.iconShopCart.IconChar = FontAwesome.Sharp.IconChar.ShoppingCart;
+            this.iconShopCart.IconColor = System.Drawing.SystemColors.Control;
+            this.iconShopCart.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconShopCart.IconSize = 36;
+            this.iconShopCart.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconShopCart.Location = new System.Drawing.Point(0, 115);
+            this.iconShopCart.Name = "iconShopCart";
+            this.iconShopCart.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.iconShopCart.Size = new System.Drawing.Size(196, 60);
+            this.iconShopCart.TabIndex = 2;
+            this.iconShopCart.Text = " Заказать";
+            this.iconShopCart.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconShopCart.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconShopCart.UseVisualStyleBackColor = true;
+            this.iconShopCart.Click += new System.EventHandler(this.iconShopCart_Click);
+            // 
+            // iconProfile
+            // 
+            this.iconProfile.Dock = System.Windows.Forms.DockStyle.Top;
+            this.iconProfile.FlatAppearance.BorderSize = 0;
+            this.iconProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconProfile.Font = new System.Drawing.Font("Sitka Small", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.iconProfile.IconChar = FontAwesome.Sharp.IconChar.UserAlt;
+            this.iconProfile.IconColor = System.Drawing.SystemColors.Control;
+            this.iconProfile.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconProfile.IconSize = 36;
+            this.iconProfile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconProfile.Location = new System.Drawing.Point(0, 55);
+            this.iconProfile.Name = "iconProfile";
+            this.iconProfile.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.iconProfile.Size = new System.Drawing.Size(196, 60);
+            this.iconProfile.TabIndex = 1;
+            this.iconProfile.Text = " Профиль";
+            this.iconProfile.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconProfile.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconProfile.UseVisualStyleBackColor = true;
+            this.iconProfile.Click += new System.EventHandler(this.iconProfile_Click);
+            // 
+            // panelLogo
+            // 
+            this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(64)))), ((int)(((byte)(213)))));
+            this.panelLogo.Controls.Add(this.label4);
+            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Name = "panelLogo";
+            this.panelLogo.Size = new System.Drawing.Size(196, 55);
+            this.panelLogo.TabIndex = 0;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(64)))), ((int)(((byte)(213)))));
+            this.panel1.Controls.Add(this.lblTitleChildForm);
+            this.panel1.Controls.Add(this.iconCurrentChildForm);
+            this.panel1.Controls.Add(this.maxim);
+            this.panel1.Controls.Add(this.minim);
+            this.panel1.Controls.Add(this.close);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(196, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(588, 55);
+            this.panel1.TabIndex = 1;
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+            // 
+            // lblTitleChildForm
+            // 
+            this.lblTitleChildForm.AutoSize = true;
+            this.lblTitleChildForm.Font = new System.Drawing.Font("Sitka Small", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTitleChildForm.Location = new System.Drawing.Point(44, 21);
+            this.lblTitleChildForm.Name = "lblTitleChildForm";
+            this.lblTitleChildForm.Size = new System.Drawing.Size(139, 18);
+            this.lblTitleChildForm.TabIndex = 2;
+            this.lblTitleChildForm.Text = "Домашняя страница";
+            // 
+            // iconCurrentChildForm
+            // 
+            this.iconCurrentChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(64)))), ((int)(((byte)(213)))));
+            this.iconCurrentChildForm.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.iconCurrentChildForm.IconChar = FontAwesome.Sharp.IconChar.Home;
+            this.iconCurrentChildForm.IconColor = System.Drawing.SystemColors.ControlText;
+            this.iconCurrentChildForm.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconCurrentChildForm.Location = new System.Drawing.Point(6, 12);
+            this.iconCurrentChildForm.Name = "iconCurrentChildForm";
+            this.iconCurrentChildForm.Size = new System.Drawing.Size(32, 32);
+            this.iconCurrentChildForm.TabIndex = 6;
+            this.iconCurrentChildForm.TabStop = false;
+            // 
+            // maxim
+            // 
+            this.maxim.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.maxim.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(64)))), ((int)(((byte)(213)))));
+            this.maxim.Image = global::secondhand.Properties.Resources.icons8_развернуть_окно_24;
+            this.maxim.Location = new System.Drawing.Point(533, 3);
+            this.maxim.Name = "maxim";
+            this.maxim.Size = new System.Drawing.Size(23, 23);
+            this.maxim.TabIndex = 5;
+            this.maxim.TabStop = false;
+            this.maxim.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // minim
+            // 
+            this.minim.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.minim.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(64)))), ((int)(((byte)(213)))));
+            this.minim.Image = global::secondhand.Properties.Resources.icons8_свернуть_окно_24;
+            this.minim.Location = new System.Drawing.Point(504, 3);
+            this.minim.Name = "minim";
+            this.minim.Size = new System.Drawing.Size(23, 23);
+            this.minim.TabIndex = 4;
+            this.minim.TabStop = false;
+            this.minim.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // close
+            // 
+            this.close.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.close.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(64)))), ((int)(((byte)(213)))));
+            this.close.Image = global::secondhand.Properties.Resources.icons8_закрыть_окно_24;
+            this.close.Location = new System.Drawing.Point(562, 3);
+            this.close.Name = "close";
+            this.close.Size = new System.Drawing.Size(23, 23);
+            this.close.TabIndex = 3;
+            this.close.TabStop = false;
+            this.close.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // panelDesktop
+            // 
+            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDesktop.Location = new System.Drawing.Point(196, 55);
+            this.panelDesktop.Name = "panelDesktop";
+            this.panelDesktop.Size = new System.Drawing.Size(588, 506);
+            this.panelDesktop.TabIndex = 2;
+            this.panelDesktop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDesktop_Paint);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(7, 20);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(183, 19);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "SecondHand \"Сундучок\"";
+            // 
+            // Form2
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.panelDesktop);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelMenu);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MinimumSize = new System.Drawing.Size(800, 600);
+            this.Name = "Form2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Form2";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Form2_Load);
+            this.panelMenu.ResumeLayout(false);
+            this.panelLogo.ResumeLayout(false);
+            this.panelLogo.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maxim)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.minim)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.close)).EndInit();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Panel panelMenu;
+        private System.Windows.Forms.Panel panelLogo;
+        private FontAwesome.Sharp.IconButton iconReviews;
+        private FontAwesome.Sharp.IconButton iconShopCart;
+        private FontAwesome.Sharp.IconButton iconProfile;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox maxim;
+        private System.Windows.Forms.PictureBox minim;
+        private System.Windows.Forms.PictureBox close;
+        private FontAwesome.Sharp.IconPictureBox iconCurrentChildForm;
+        private System.Windows.Forms.Label lblTitleChildForm;
+        private System.Windows.Forms.Panel panelDesktop;
+        private FontAwesome.Sharp.IconButton iconContacts;
+        private System.Windows.Forms.Label label4;
+    }
+}
